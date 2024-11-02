@@ -9,7 +9,7 @@ creds = ServiceAccountCredentials.from_json_keyfile_name("sai-finance.json", sco
 client = gspread.authorize(creds)
 
 # Open the Google Sheet by URL
-sheet_url = 'https://docs.google.com/spreadsheets/d/1lPc5nFXqaTgZuP7EtdoFgNrzKfmvLUsmZi9r4TWlNng/edit#gid=0'
+sheet_url = 'https://docs.google.com/spreadsheets/d/1lPc5nFXqaTgZuP7EtdoFgNrzKfmvLUsmZi9r4TWlNng/edit?gid=0#gid=0'
 spreadsheet = client.open_by_url(sheet_url)
 worksheet = spreadsheet.get_worksheet(0)
 
