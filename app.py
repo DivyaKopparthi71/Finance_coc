@@ -1,9 +1,20 @@
 import streamlit as st
 import pandas as pd
+import gspread
+from oauth2client.service_account import ServiceAccountCredentials
 
-# Load the data from Google Sheets
-sheet_url = 'https://docs.google.com/spreadsheets/d/1lPc5nFXqaTgZuP7EtdoFgNrzKfmvLUsmZi9r4TWlNng/export?format=csv'
-data = pd.read_csv(sheet_url)
+# Define the scope and credentials for Google Sheets API
+scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/spreadsheets", "https://www.googleapis.com/auth/drive.file", "https://www.googleapis.com/auth/drive"]
+creds = ServiceAccountCredentials.from_json_keyfile_name("sai-finance.json", scope)
+client = gspread.authorize(creds)
+
+# Open the Google Sheet by URL
+sheet_url = 'https://docs.google.com/spreadsheets/d/1lPc5nFXqaTgZuP7EtdoFgNrzKfmvLUsmZi9r4TWlNng/edit#gid=0'
+spreadsheet = client.open_by_url(sheet_url)
+worksheet = spreadsheet.get_worksheet(0)
+
+# Load data into a DataFrame
+data = pd.DataFrame(worksheet.get_all_records())
 
 # Title of the app
 st.title("User Information Form")
@@ -25,22 +36,12 @@ if user_type == "New User":
         # Submit button for new user form
         submitted = st.form_submit_button("Submit")
         if submitted:
-            # Append the new user data to the DataFrame
-            new_row = {
-                "Name": name,
-                "Phone Number": phone_number,
-                "Address": address,
-                "Mode": mode,
-                "Days": days,
-                "Months": months,
-                "Amount": amount
-            }
-            data = data.append(new_row, ignore_index=True)
+            # Append the new user data to the Google Sheet
+            new_row = [name, phone_number, address, mode, days, months, amount]
+            worksheet.append_row(new_row)
             st.success("New user data added successfully!")
-            st.write("Updated Data:", data)
 
 elif user_type == "Old User":
     # Displaying the data from Google Sheets for existing users
     st.write("Existing Users Data")
     st.dataframe(data)
-
