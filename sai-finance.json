@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "sai-finance-440509",
+  "private_key_id": "af9a132542488972fdde85c6b1e64d91583b023e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC700c4eeMsV/qQ\nmNfmyEw8Lv+UQnehpHCWZacaYZVXcAuUkCt/J7RJz+FJvvQbwSP64heFrZS4vmOW\ncBI27OZrgthZZwHgrkX2sjdJr3FCNaEOc5wW7HqqjPvYJQLuo+9l/SR0swfVu6BA\n2PAYVjDjsakcJKo3LY83uYpNPm2i164ltPc3XZeXbb+tRRVdXYaeQwdLKP5v8EaB\nCLAIqX+9duxVBHmqQj70EIcw89yKscLVpd6NvqD2A5dlX96r1/0jsxl8yBmoz6Bk\n2yh6Dr3yGBrs1jFJbAV4AuDOpqmBVzO/+PrhYyB8FF/C4kbgAfXljw36Plv84teB\nyrfpnk5nAgMBAAECggEAAOjrXSKKBKVfY+MgDfLOcRD+BDgbimGUV1/ESTEYnyto\n+mrbCPOVfGRy3f+m794l6c3f6Bhmw1y9AbGva01+emJQRwx1F1Z4PvWMtr8QSYWv\npnDN/n73kBXN8wrCUpxIa2Vj/loPIagvr3pVA61urMuwdI7YYIGmQjjYiKmoFpH6\ngGJQ/Mua/PtTExc/3LpZxkcmLsJP5hLAAcfyRp2ryl3+gpho7Rx+4+Bgz/TNhGLu\nCCCrTjber2gX3GCGhhLpGD86NTjgfywkgkDw8f9i+ue6nrAMpuAb2Ch+vp2cq3xB\nZxLY9J0QNQoUI0PStt5Wd04Ovd4E254NEPzz3OND8QKBgQDnjnynTrCb67fzt8lr\n153Le3ajBW/5RMgVHpXWjg4dGUaOGYfw93Vn2xfTILvi7hWoG/mmr0j9TnZ326Cn\nd+gcchC8dKOEEKO7YVlthbTt5TYfRCkTDpE0FkPGdKACYZrHYREBxJclUzgc72iq\n06eZC5Ykd8V7zLK8b6fEOlJjJQKBgQDPpwK8ycUiVXGVwe+M8OFNLQU4Q5p+B8xO\n2KX7bmSLyjV3dCi7ubeodQ8oIMOio3P8TiCUX+CKDq2ljmGYBfINq60SKNBNTXfz\no51BdHWfwSfuGSNGcsu4+ZxKsvpvMJ9uGCw5MpuU08xd6Yw6FFIwvBcWTDUXo1v1\nkb60RTv7mwKBgHLIoCQzjrqL+7D1rwQlaxQeTK39GQegv+owMiicXISyLdZs84VQ\ntcNYyROgi2KvkM63p2aoR29BwNojZhz+BHJtXLx+uTvTH8bYOANhn1G6KL0RBadr\ntjDyxIAQ+eyUQ6yIAm007ZPUD+HQD7t2lgL4ymGjeaKn0wYz9x7/pi19AoGAYfDU\n8rR8PbBtTYRWd3SZ36vPXXVNZgpJjBrVVtz/oYtzYm8wUzLKdDMaPgQOIiTULPmw\nlisOni9EKeUZFPog69/AVuNXNE7It+rA3kGOxRX2vm+u2qiEfC+HTxhR1KXrXKMc\nILJE/ZJUPytLz40MIx5kCUlSdV7AnffrKd3J5+cCgYEAhO19/9ysd8x+Jrb7+tVw\n+FuEreYrXCUQJRUKSvVilXDF/Lf4UAmvFbOgnik/Oqt/1K26uEeMaA/ZxtOQSs1l\nHIUv4YAc1gEPjBTr5xDxgbT/jVRRyRz2yDTAW/b5mabAjheAa3LuvNvhAJuALRFW\nUipPCYgw8949eDOVTZ16eYM=\n-----END PRIVATE KEY-----\n",
+  "client_email": "sai-3296@sai-finance-440509.iam.gserviceaccount.com",
+  "client_id": "114208724975146578766",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/sai-3296%40sai-finance-440509.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
